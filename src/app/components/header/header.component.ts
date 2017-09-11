@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
     .subscribe(data=>{
       let jsonClasico = data;
       for (let _p of jsonClasico){
-        _p.logomarca = 'http://image.rcn.com.co.s3.amazonaws.com/rcnradio/lafm.png';
+        _p.logomarca = 'assets/img/antena2.jpg';
         let valor;
         if (_p._links['wp:featuredmedia']){
             valor = _p._links['wp:featuredmedia']['0']['href'];
