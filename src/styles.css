@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+
+.w97 {
+    width: 100%;
+    max-width: 970px;
+    display: block;
+    margin: 0px auto;
+    background-image: url(assets/img/bg.png);
+    padding: 10px;
+    float: left;
+}
+.bg-white {
+background-color: #fff;
+    padding: 10px;
+    float: left;
+}
+h1.titleN {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+.logoportal {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 9px;
+    top: 9px;
+}
+.card {
+    position: relative;
+}
+.wrap_img {
+    position: relative;
+    height: 155px;
+    overflow: hidden;
+}
