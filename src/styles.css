@@ -6,20 +6,24 @@
     max-width: 970px;
     display: block;
     margin: 0px auto;
-    background-image: url(assets/img/bg.png);
-    padding: 10px;
+    background-image: url(assets/img/Manzana-Postobon-Team_Textura-Black-1Home.png);
+    padding: 5px 0;
+    background-size: 100%;
+    background-position: center 0px;
     float: left;
 }
+
 .bg-white {
-background-color: #fff;
     padding: 10px;
     float: left;
 }
 h1.titleN {
     font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
-    color: white;
+    font-size: 19px;
+    color: #d33872;
     margin: 0;
+    line-height: normal;
+    font-weight: bold;
 }
 .logoportal {
     position: absolute;
@@ -33,6 +37,63 @@ h1.titleN {
 }
 .wrap_img {
     position: relative;
-    height: 155px;
+    height: 135px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-bottom: 4px solid rgba(236,0,142,0.5);
+}
+.descript p {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+} 
+.date {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    line-height: normal;
+}
+figure {
+    height: 150px;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+/* brillo */
+.hover14 figure {
+	position: relative;
+}
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index:99;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover14 figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+/* brillo */
