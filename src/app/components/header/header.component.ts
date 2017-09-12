@@ -8,8 +8,6 @@ import { SwiperModule } from 'angular2-useful-swiper';
   templateUrl: './header.component.html'
 })
 
-
-
 export class HeaderComponent implements OnInit {
 
   public ObjClasico;
