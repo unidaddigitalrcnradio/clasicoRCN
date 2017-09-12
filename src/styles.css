@@ -16,6 +16,8 @@
 .bg-white {
     padding: 10px;
     float: left;
+    width: 100%;
+    max-width: 970px;
 }
 h1.titleN {
     font-family: 'PT Sans', sans-serif;
@@ -97,3 +99,16 @@ figure:hover+span {
 	}
 }
 /* brillo */
+
+.itemE {
+    color: white;
+}
+.certSlider {
+    overflow: hidden;
+}
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
