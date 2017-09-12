@@ -1,16 +1,43 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, DoCheck, AfterContentInit } from '@angular/core';
 import { WpdataService } from '../../service/wpdata.service';
+import { SwiperModule } from 'angular2-useful-swiper';
+
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html'
 })
+
+
+
 export class HeaderComponent implements OnInit {
 
   public ObjClasico;
 
-  constructor(private _wp:WpdataService) { 
+  config: SwiperOptions= {
+    slidesPerView: 3,
+    initialSlide:6,
+    paginationClickable: true,
+    spaceBetween: 30,
+    loop:true,
+    autoplay: 4000,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }, 
+        520: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },      
+    }
+    };
 
+
+  
+
+  constructor(private _wp:WpdataService) { 
+    
     this._wp.getDataWP("http://www.clasicorcn.co/wp-json/wp/v2/posts?categories=426")
     .subscribe(data=>{
       let jsonClasico = data;

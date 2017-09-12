@@ -9,6 +9,8 @@ import { HeaderComponent } from './components/header/header.component';
 // SERVICIOS
 import { WpdataService } from './service/wpdata.service';
 
+import { SwiperModule } from 'angular2-useful-swiper';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { WpdataService } from './service/wpdata.service';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    SwiperModule
   ],
   providers: [
     {provide:LOCALE_ID, useValue:"es"},
