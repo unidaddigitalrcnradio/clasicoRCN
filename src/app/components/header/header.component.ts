@@ -16,8 +16,7 @@ export class HeaderComponent implements OnInit {
 
   config: SwiperOptions= {
     slidesPerView: 3,
-    initialSlide:6,
-    paginationClickable: true,
+    paginationClickable: false,
     spaceBetween: 30,
     loop:true,
     autoplay: 4000,
