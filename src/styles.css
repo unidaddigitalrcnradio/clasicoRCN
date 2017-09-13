@@ -22,7 +22,7 @@
 h1.titleN {
     font-family: 'PT Sans', sans-serif;
     font-size: 19px;
-    color: #d33872;
+    color: #fbca02;
     margin: 0;
     line-height: normal;
     font-weight: bold;
@@ -55,6 +55,8 @@ h1.titleN {
     font-family: 'PT Sans', sans-serif;
     font-size: 12px;
     line-height: normal;
+    margin-top: 9px;
+    margin-bottom: 5px;
 }
 figure {
     height: 150px;
@@ -111,4 +113,12 @@ figure:hover+span {
     position: relative;
     overflow: hidden;
     z-index: 1;
+}
+.headre_embed {
+    border-bottom: 3px solid #fbca02;
+    display: block;
+    margin: 0px auto;
+    float: left;
+    width: 100%;
+    max-width: 970px;
 }
