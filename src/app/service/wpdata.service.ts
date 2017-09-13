@@ -72,19 +72,17 @@ addImagenJson(allnoti){
     let imgDatos;
     let valor:string = allnoti[i].urlImg;
     if (valor === 'sinImagen'){
-      allnoti[i].urlImg = 'http://image.rcn.com.co.s3.amazonaws.com/rcnradio/prev.jpg';
+      allnoti[i].urlImg = 'http://image.rcn.com.co.s3.amazonaws.com/rcnradio/imagen_clasico.jpg';
     }else{
       this.getDataWP(valor).subscribe(
         result => {
           imgDatos = result;
           allnoti[i].urlImg = imgDatos.source_url;
-          
         },
         error => {
           errorMessage = <any>error;
           if (errorMessage !== null){
-            allnoti[i].urlImg = 'http://image.rcn.com.co.s3.amazonaws.com/rcnradio/prev.jpg';
-            
+            allnoti[i].urlImg = 'http://image.rcn.com.co.s3.amazonaws.com/rcnradio/imagen_clasico.jpg';
           }
         });
     }
