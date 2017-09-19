@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
     paginationClickable: false,
     spaceBetween: 30,
     loop:true,
-    autoplay: 4000,
+    autoplay: 9000,
     breakpoints: {
         768: {
             slidesPerView: 2,
