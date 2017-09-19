@@ -48,8 +48,9 @@ export class HeaderComponent implements OnInit {
         }
         _p.imgjson = valor;
     }
+    console.log(jsonClasico);
     this.ObjClasico =  this.traerimagenes(this._wp.crearObjNoti(jsonClasico));
-    console.log(this.ObjClasico);
+    //console.log(this.ObjClasico);
     });
 
   }
